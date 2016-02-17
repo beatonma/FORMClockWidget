@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:id="@+id/top_level_container"
+    style="@style/Preference">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/TextSecondary">
+        <com.beatonma.formclockwidget.app.ui.ColorPreviewButton
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:id="@+id/color_button"
+            android:elevation="@dimen/button_elevation"/>
+        <!--<View-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="96dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@color/TranslucentBlack"-->
+            <!--android:clickable="false"-->
+            <!--android:id="@+id/color_overlay"/>-->
+    </FrameLayout>
+
+    <android.support.v7.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="12dp"
+        android:id="@+id/color_lock"/>
+</LinearLayout>

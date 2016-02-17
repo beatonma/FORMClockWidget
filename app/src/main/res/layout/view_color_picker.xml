@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slider="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="48dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overlay"
+        android:background="@color/TextSecondary"
+        android:alpha="0"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/card"
+        style="@style/Card">
+        <ScrollView
+            android:layout_width="@dimen/colorpicker_card_width"
+            android:layout_height="@dimen/colorpicker_card_height"
+            android:id="@+id/content_container">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="@dimen/colorpicker_card_width"
+                    android:layout_height="@dimen/colorpicker_card_height"
+                    android:id="@+id/recyclerview"
+                    android:clickable="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:id="@+id/custom_color_container"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    android:clickable="true">
+
+                    <com.beatonma.colorpicker.CustomColorPreviewView
+                        android:layout_width="@dimen/button_color_size"
+                        android:layout_height="@dimen/button_color_size"
+                        android:id="@+id/custom_preview"
+                        android:background="@drawable/transparent_tile"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#"/>
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="FF000000"
+                            android:maxLength="8"
+                            android:inputType="textCapCharacters|textNoSuggestions"
+                            android:id="@+id/custom_hex"/>
+                    </LinearLayout>
+
+                    <com.beatonma.colorpicker.ColorSeekbarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/red_slider"
+                        slider:text="R"
+                        slider:textcolor="@color/Red500"
+                        slider:channel="0"/>
+                    <com.beatonma.colorpicker.ColorSeekbarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/green_slider"
+                        slider:text="G"
+                        slider:textcolor="@color/Green500"
+                        slider:channel="1"/>
+                    <com.beatonma.colorpicker.ColorSeekbarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/blue_slider"
+                        slider:text="B"
+                        slider:textcolor="@color/Blue500"
+                        slider:channel="2"/>
+                    <com.beatonma.colorpicker.ColorSeekbarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/alpha_slider"
+                        slider:text="A"
+                        slider:textcolor="@color/DialogDark"
+                        slider:channel="3"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:layout_below="@+id/content_container"
+            android:layout_alignLeft="@+id/content_container"
+            android:layout_alignStart="@+id/content_container"
+            android:id="@+id/custom_button"
+            android:text="Custom"
+            style="@style/Button.Flat.Dialog"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:layout_below="@+id/content_container"
+            android:layout_alignRight="@+id/content_container"
+            android:layout_alignEnd="@+id/content_container"
+            android:id="@+id/back_button"
+            android:text="Back"
+            android:visibility="invisible"
+            style="@style/Button.Flat.Dialog"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/button_width"
+            android:layout_below="@+id/content_container"
+            android:layout_alignRight="@+id/content_container"
+            android:layout_alignEnd="@+id/content_container"
+            android:id="@+id/custom_ok"
+            android:text="OK"
+            android:visibility="invisible"
+            style="@style/Button.Flat.Dialog"/>
+    </RelativeLayout>
+</RelativeLayout>

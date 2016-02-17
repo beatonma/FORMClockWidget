@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name" translatable="false">FORM Clock Widget</string>
+
+    <string name="preview_description" translatable="false">Widget preview</string>
+    <string name="dream_name" translatable="false">FORM Clock</string>
+
+    <string name="contact_email" translatable="false">beatonma+form@gmail.com</string>
+    <string name="contact_email_subject" translatable="false">FORM Clock Widget feedback</string>
+    <string name="contact_community" translatable="false">https://plus.google.com/u/0/communities/113955537219140914914/stream/a4a4125e-981b-41cc-a848-6c038d002a05</string>
+
+    <!-- User settings -->
+    <string-array name="tab_titles">
+        <item>@string/config_tab_colors</item>
+        <item>@string/config_tab_layout</item>
+        <item>@string/config_tab_format</item>
+        <item>@string/config_tab_other</item>
+        <item>@string/config_tab_feedback</item>
+    </string-array>
+    <string name="config_tab_layout" translatable="false">Layout</string>
+    <string name="config_tab_colors">Colors</string>
+    <string name="config_tab_format" translatable="false">Format</string>
+    <string name="config_tab_other" translatable="false">Other</string>
+    <string name="config_tab_beta" translatable="false">Beta</string>
+    <string name="config_tab_feedback" translatable="false">Feedback</string>
+
+    <!-- Category: Colors -->
+    <string name="pref_color_section_main" translatable="false">Main</string>
+    <string name="pref_color_section_shadow" translatable="false">Outline</string>
+    <string name="pref_color_section_complications" translatable="false">Complications</string>
+    <string name="pref_color_section_bias" translatable="false">Generation</string>
+    <string name="pref_color_bias" translatable="false">Automatic bias</string>
+    <string name="pref_color_bias_default" translatable="false">Default</string>
+    <string name="pref_color_bias_dark" translatable="true">Prefer darker colors</string>
+    <string name="pref_color_bias_light" translatable="true">Prefer lighter colors</string>
+    <string-array name="color_bias_entries">
+        <item>@string/pref_color_bias_default</item>
+        <item>@string/pref_color_bias_dark</item>
+        <item>@string/pref_color_bias_light</item>
+    </string-array>
+
+    <!-- Category: Layout -->
+    <string name="pref_theme_show_shadows" translatable="false">Enable outlines</string>
+    <string name="pref_theme_show_shadows_summary" translatable="false">Show a thin outline to make it easier to see against your wallpaper.</string>
+    <string name="pref_theme_orientation" translatable="false">Orientation</string>
+    <string name="orientation_horizontal" translatable="false">Horizontal</string>
+    <string name="orientation_vertical" translatable="false">Vertical</string>
+    <string name="orientation_device" translatable="false">Device orientation</string>
+    <string-array name="orientation_entries">
+        <item>@string/orientation_horizontal</item>
+        <item>@string/orientation_vertical</item>
+        <item>@string/orientation_device</item>
+    </string-array>
+    <string name="pref_complication_date" translatable="false">Date</string>
+    <string name="pref_date_format" translatable="false">Date format</string>
+    <string name="date_format_long" translatable="false">EEEE d MMMM</string>
+    <string name="date_format_short" translatable="false">EEE d MMM</string>
+    <string name="date_format_custom" translatable="false">__custom__</string>
+    <string-array name="date_format_entries">
+        <item>@string/date_format_long</item>
+        <item>@string/date_format_short</item>
+        <item>@string/date_format_custom</item>
+    </string-array>
+    <string name="pref_date_uppercase" translatable="false">Uppercase</string>
+    <string name="pref_complication_alarm" translatable="false">Next alarm</string>
+
+    <string name="pref_update_interval">Color update frequency</string>
+    <string name="pref_update_interval_summary">How often colors should sync with your wallpaper. You can force an update manually by tapping the widget.</string>
+    <string name="update_interval_minute" translatable="false">Every minute</string>
+    <string name="update_interval_hour" translatable="false">Every hour</string>
+    <string name="update_interval_day" translatable="false">Every day</string>
+    <string name="update_interval_manual" translatable="false">Manual updates only</string>
+    <string-array name="update_interval_entries">
+        <item>@string/update_interval_minute</item>
+        <item>@string/update_interval_hour</item>
+        <item>@string/update_interval_day</item>
+        <item>@string/update_interval_manual</item>
+    </string-array>
+
+    <!-- Category: Format -->
+    <string name="pref_section_format_time" translatable="false">Clock</string>
+    <string name="pref_format_time" translatable="false">Time</string>
+    <string name="pref_format_time_summary" translatable="false">Use system settings.</string>
+    <string name="pref_section_format_complications" translatable="false">Complications</string>
+    <string name="time_format_system" translatable="false">Use system setting</string>
+    <string name="time_format_12" translatable="false">12 hour</string>
+    <string name="time_format_24" translatable="false">24 hour</string>
+    <string-array name="time_format_entries">
+        <item>@string/time_format_system</item>
+        <item>@string/time_format_12</item>
+        <item>@string/time_format_24</item>
+    </string-array>
+    <string name="pref_format_zero_padding" translatable="false">Zero-padding</string>
+
+    <!-- Category: Other -->
+    <string name="pref_enable_animation" translatable="false">Enable animation</string>
+    <string name="pref_enable_animation_summary" translatable="false"><b>Warning</b>: widgets are not meant to animate! Animation is rarely smooth and may cause performance issues.</string>
+    <string name="pref_on_touch" translatable="false">Touch shortcut(s)</string>
+    <string name="pref_on_touch_summary" translatable="false">Choose what happens when the widget is touched.</string>
+    <string name="on_touch_nothing" translatable="false">Nothing</string>
+
+    <!-- Fragment tags -->
+    <string name="fragtag_colorpicker" translatable="false">colorpicker</string>
+    <string name="fragtag_listpreference" translatable="false">listpreference</string>
+    <string name="fragtag_floating" translateable="false" translatable="false">floating</string>
+    <string name="fragtag_changelog" translateable="false" translatable="false">changelog</string>
+
+    <!-- Onboarding -->
+
+
+    <!-- Help -->
+    <string name="help_color_locking_title" translatable="false">Welcome to v2.0!</string>
+    <string name="help_color_locking_content_1">Color selection is now much more flexible and works a little differently.</string>
+    <string name="help_color_locking_content_2"><li>The switch below each patch \'locks\' that color so that it always stays the same.</li></string>
+    <string name="help_color_locking_content_3"><li>Any unlocked colors will be replaced depending on your wallpaper.</li></string>
+    <string name="help_date_formatting_title" translatable="false">Formatting examples:</string>
+
+
+    <!-- Generic button text -->
+    <string name="button_ok" translatable="false">OK</string>
+    <string name="button_understood" translatable="false">Understood</string>
+    <string name="button_changelog" translatable="false">What else is new?</string>
+    <string name="button_close" translatable="false">Close</string>
+    <string name="button_email" translatable="false">Send email</string>
+    <string name="button_community" translatable="false">Visit G+ Community</string>
+    <string name="button_widget_settings" translatable="false">Widget settings</string>
+
+    <string name="changelog_title" translatable="false">Change log</string>
+    <string name="changelog">
+        <b>v2.0.1</b> (February 2016):\n
+        <li>New option to tweak automatic color-picking to prefer lighter/darker colors.</li>\n
+        <li>Fixed: Muzei wallpaper changes will now automatically force a color update.</li>\n
+        <li>Fixed: Touch shortcuts will no longer remove FORM from the Recents overview screen.</li>\n
+        \n\n\n
+
+
+        <b>v2.0</b> (February 2016):\n
+        Rebuilt from the ground up!\n\n
+        <li>Optimized widget rendering code.</li>\n\n
+        <li>Much more flexible color options:\n
+        - You can now pick any ARGB color, or pick one of the presets.\n
+        - Separate color controls for outlines and complications.\n
+        - Each color can now be \'locked\' individually.
+        --- Locked colors will stay the same no matter what wallpaper you use.\n
+        --- Unlocked colors will be replaced by colors picked from your wallpaper.</li>\n\n
+        <li>Flexible new formatting options for the clock and any complications.</li>\n\n
+        <li>New option to change widget layout depending on device rotation</li>\n\n
+        <li>New option to change the frequency of color-syncing with your wallpaper. Choose a lower frequency to reduce system resource usage\n
+        - You can always tap on the widget to force a resync.</li>\n\n
+        <li>You can now choose more than one app shortcut - if more than one is selected then tapping the widget will show you a launcher list to choose from, otherwise it will open the chosen app immediately.</li>\n
+        <li>Added a very basic Daydream. For now this is essentially an easter egg but will be improved on in future updates.</li>\n
+        \n\n
+    </string>
+    <string name="changelog_beta">
+        <b>v2.0.d</b>\n
+        <li>Some users have had problems with the touch shortcut settings, so I have reimplemented that dialog. I was not able to replicate the error so this is mostly guesswork - if you have had issues before please let me know if this has fixed it for you!</li>\n
+        <li>- The shortcut menu is now sorted properly and shows package names to help you figure out which app called e.g. \'Clock\' you actually want to use.</li>\n
+        <li>Added a very basic Daydream. It currently uses the same settings as the widget and can be a little wonky - optimization and customization will be implemented when possible.</li>\n
+        <li>Minor dialog animation tweaks.</li>\n
+        \n\n\n
+
+        <b>v2.0.c (11 January 2016)</b>\n
+        <li>You can now choose the opacity of custom colors.</li>\n\n
+        <li>More formatting options:</li>\n
+        <li>- Explicitly choose 12- or 24-hour formatting to override your system settings.</li>\n
+        <li>- Removed restrictions on custom date formatting.</li>\n
+        <li>- Toggle for upper or lowercase in complication text.</li>\n
+        <li>- Optional zero-padding.</li>\n
+        <li>- Formatting options have moved to their own tab.</li>\n\n
+        <li>Unlocked color buttons now show a colored icon to show which color they have pulled from your wallpaper.</li>\n\n
+        <li>Fixed: weird looking complication text shadow on some devices</li>\n\n
+        \n\n\n
+
+
+        <b>v2.0.b (16 November 2015)</b>\n
+        <li>Color patches now fade out when they are not in effect. Still not sure this is completely intuitive but it\'s better than before.</li>\n\n
+        <li>Fixed: The midnight hour now correctly shows as \'12:xx\' in 12-hour format.</li>\n\n
+        <li>Fixed: Color picker no longer gets weird when you click on an empty space. </li>\n\n
+        <li>Fixed: Bug that could cause 2 options to be selected in \'Color update frequency\' dialog.</li>\n
+        \n\n\n
+
+
+        <b>v2.0.a (14 November 2015)</b>\n
+        Rebuilt from the ground up!\n\n
+        <li>Optimised widget rendering code.</li>\n\n
+        <li>New option to change widget layout depending on device rotation.</li>\n\n
+        <li>Much more flexible color options:</li>\n
+        <li>- You can now make any RGB color, or pick one of the presets.</li>\n
+        <li>- Separate colour controls for outlines and complications.</li>\n
+        <li>- Each color can be \'locked\' individually:</li>\n
+        <li> --- Locked colors will stay the same no matter what wallpaper you use.</li>\n
+        <li> --- Unlocked colors will be replaced by colours picked from your wallpaper.</li>\n\n
+        <li>New date formatting options.</li>\n\n
+        <li>New option to change the frequency of color-syncing with your wallpaper. Choose a lower frequency to reduce system resource usage. You can always touch the widget to force a color update.</li>\n\n
+        <li>You can now choose more than one app to open when you touch the widget. Tapping the widget will force a color update, regardless of other settings.</li>
+        <!--<li>Notification colors - change widget colors when you have particular notifications active.</li>\n-->
+    </string>
+
+    <string name="beta_thankyou_title" translatable="false">Thank you!</string>
+    <string name="beta_thankyou" translatable="false">
+        Thank you for helping me test this beta version of FORM Clock Widget.\n\n
+        Please let me know if you have any crashes or unexpected oddities and I will do my best to sort them out quickly. Any other forms of feedback and requests are welcome too!
+    </string>
+
+    <string name="feedback_title" translatable="false">Something to say?</string>
+    <string name="feedback_text" translatable="false">If you have any problems or requests please let me know and I will do what I can to help you.</string>
+
+</resources>

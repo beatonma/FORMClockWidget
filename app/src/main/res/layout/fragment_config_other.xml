@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pref="http://schemas.android.com/apk/res-auto"
+    xmlns:list="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_level_container">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.beatonma.formclockwidget.app.ui.ListPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            list:name="@string/pref_on_touch"
+            list:description="@string/pref_on_touch_summary"
+            list:key="pref_on_touch"
+            list:multiselect="true"/>
+
+        <com.beatonma.formclockwidget.app.ui.ListPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            list:name="@string/pref_update_interval"
+            list:description="@string/pref_update_interval_summary"
+            list:key="pref_update_interval"
+            list:defaultValue="1"
+            list:entries="@array/update_interval_entries"/>
+
+        <com.beatonma.formclockwidget.app.ui.SwitchPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_enable_animation"
+            pref:description="@string/pref_enable_animation_summary"
+            pref:key="pref_enable_animation"/>
+
+        <!-- Padding -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+</ScrollView>

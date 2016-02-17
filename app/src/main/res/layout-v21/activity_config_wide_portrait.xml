@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_level_container">
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wallpaper"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:alpha="0"
+            android:contentDescription="@string/preview_description"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/flat_button_selector"
+            android:id="@+id/overlay"
+            android:clickable="true"
+            android:elevation="1dp"/>
+
+        <android.support.percent.PercentRelativeLayout
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="162%"
+            android:minHeight="@dimen/header_height"
+            android:id="@+id/preview_window">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/statusbar_height">
+                <FrameLayout
+                    app:layout_widthPercent="80%"
+                    app:layout_heightPercent="80%"
+                    android:layout_centerInParent="true">
+                    <com.beatonma.formclockwidget.formclock.FormClockView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/clock_preview_1"
+                        android:elevation="1dp"/>
+
+                    <com.beatonma.formclockwidget.formclock.FormClockView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/clock_preview_2"
+                        android:visibility="invisible"
+                        android:elevation="2dp"/>
+                </FrameLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <RelativeLayout
+            app:layout_widthPercent="80%"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/preview_window"
+            android:layout_centerHorizontal="true"
+            android:elevation="4dp"
+            style="@style/Card.NoClip">
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/expanded_tab_height"
+                android:background="@color/Primary"
+                android:textColor="@color/TextPrimaryLight"
+                android:elevation="4dp"
+                android:id="@+id/tabs"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tabs"
+                android:id="@+id/viewpager"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tabs"
+                android:id="@+id/image_loading_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="true"
+                android:layout_marginTop="-8dp"
+                android:padding="0dp"
+                android:elevation="8dp"/>
+        </RelativeLayout>
+    </android.support.percent.PercentRelativeLayout>
+</FrameLayout>

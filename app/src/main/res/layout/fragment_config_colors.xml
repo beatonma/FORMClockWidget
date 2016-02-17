@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pref="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_level_container">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/help_color_locking"
+            style="@style/Card">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_color_locking_title"
+                style="@style/ListItemTitle"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_color_locking_content_1"
+                style="@style/ListItemDescription"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_color_locking_content_2"
+                style="@style/ListItemDescription"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_color_locking_content_3"
+                style="@style/ListItemDescription"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_changelog"
+                android:gravity="right|end|center_vertical"
+                android:text="@string/button_changelog"
+                style="@style/Button.Flat.Dialog"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_dismiss"
+                android:gravity="right|end|center_vertical"
+                android:text="@string/button_understood"
+                style="@style/Button.Flat"/>
+        </LinearLayout>
+
+        <com.beatonma.formclockwidget.app.ui.PreferenceSection
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_color_section_main"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <com.beatonma.formclockwidget.app.ui.ColorPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_color1"
+                pref:key="pref_color1"/>
+
+            <com.beatonma.formclockwidget.app.ui.ColorPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_color2"
+                pref:key="pref_color2"/>
+
+            <com.beatonma.formclockwidget.app.ui.ColorPreference
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_color3"
+                pref:key="pref_color3"/>
+        </LinearLayout>
+
+        <com.beatonma.formclockwidget.app.ui.PreferenceSection
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_color_section_complications"/>
+
+        <com.beatonma.formclockwidget.app.ui.ColorPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_color_complications"
+            pref:key="pref_color_complications"/>
+
+        <com.beatonma.formclockwidget.app.ui.PreferenceSection
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_color_section_shadow"/>
+
+        <com.beatonma.formclockwidget.app.ui.ColorPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_color_shadow"
+            pref:key="pref_color_shadow"/>
+
+        <com.beatonma.formclockwidget.app.ui.PreferenceSection
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_color_section_bias"/>
+
+        <com.beatonma.formclockwidget.app.ui.ListPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            pref:name="@string/pref_color_bias"
+            pref:showSelected="true"
+            pref:key="pref_color_bias"
+            pref:entries="@array/color_bias_entries" />
+
+        <!-- Padding -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+</ScrollView>

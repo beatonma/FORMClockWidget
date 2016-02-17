@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_color_bias_dark" translatable="true">Prefer darker colours</string>
+    <string name="pref_color_bias_light" translatable="true">Prefer lighter colours</string>
+    <string name="config_tab_colors">Colours</string>
+    <string name="pref_update_interval_summary">How often colours should sync with your wallpaper. You can force an update manually by tapping the widget.</string>
+    <string name="pref_update_interval">Colour update frequency</string>
+    <string name="changelog">
+        <b>v2.0.1</b> (February 2016):\n
+        <li>New option to tweak automatic color-picking to prefer lighter/darker colors.</li>\n
+        <li>Fixed: Muzei wallpaper changes will now automatically force a color update.</li>\n
+        <li>Fixed: Touch shortcuts will no longer remove FORM from the Recents overview screen.</li>\n
+        \n\n\n
+
+
+        <b>v2.0</b> (February 2016):\n
+        Rebuilt from the ground up!\n\n
+        <li>Optimised widget rendering code.</li>\n\n
+        <li>Much more flexible colour options:\n
+        - You can now pick any ARGB colour, or pick one of the presets.\n
+        - Separate colour controls for outlines and complications.\n
+        - Each colour can now be \'locked\' individually.\n
+        --- Locked colours will stay the same no matter what wallpaper you use.\n
+        --- Unlocked colours will be replaced by colours picked from your wallpaper.</li>\n\n
+        <li>Flexible new formatting options for the clock and any complications.</li>\n\n
+        <li>New option to change widget layout depending on device rotation</li>\n\n
+        <li>New option to change the frequency of colour-syncing with your wallpaper. Choose a lower frequency to reduce system resource usage.\n
+        - You can always tap on the widget to force a re-sync.</li>\n\n
+        <li>You can now choose more than one app shortcut - if more than one is selected then tapping the widget will show you a launcher list to choose from, otherwise it will open the chosen app immediately.</li>\n
+        <li>Added a very basic Daydream. For now this is essentially an easter egg but will be improved on in future updates.</li>\n
+        \n\n
+    </string>
+    
+    <string name="changelog_beta">
+        <b>v2.0.d</b>\n
+        <li>Some users have had problems with the touch shortcut settings, so I have reimplemented that dialog. I was not able to replicate the error so this is mostly guesswork - if you have had issues before please let me know if this has fixed it for you!</li>\n
+        <li>- The shortcut menu is now sorted properly and shows package names to help you figure out which app called e.g. \'Clock\' you actually want to use.</li>\n
+        <li>Added a very basic Daydream. It currently uses the same settings as the widget and can be a little wonky - optimization and customization will be implemented when possible.</li>\n
+        <li>Minor dialog animation tweaks.</li>\n
+        \n\n\n
+
+
+        <b>v2.0.c</b>\n
+        <li>You can now choose the opacity of custom colours.</li>\n\n
+        <li>More formatting options:</li>\n
+        <li>- Explicitly choose 12- or 24-hour formatting to override your system settings.</li>\n
+        <li>- Removed restrictions on custom date formatting.</li>\n
+        <li>- Toggle for upper or lowercase in complication text.</li>\n
+        <li>- Optional zero-padding.</li>\n
+        <li>- Formatting options have moved to their own tab.</li>\n\n
+        <li>Unlocked colour buttons now show a coloured icon to show which colour they have pulled from your wallpaper.</li>\n\n
+        <li>Fixed: weird looking complication text shadow on some devices</li>\n\n
+        \n\n\n
+
+
+        <b>v2.0.b (16 November 2015)</b>\n
+        <li>Colour patches now fade out when they are not in effect. Still not sure this is completely intuitive but it\'s better than before.</li>\n\n
+        <li>Fixed: The midnight hour now correctly shows as \'12:xx\' in 12-hour format.</li>\n\n
+        <li>Fixed: Colour picker no longer gets weird when you click on an empty space. </li>\n\n
+        <li>Fixed: Bug that could cause 2 options to be selected in \'Colour update frequency\' dialog.</li>\n\n
+        \n\n\n
+
+
+        <b>v2.0.a (14 November 2015)</b>\n
+        Rebuilt from the ground up!\n\n
+        <li>Optimised widget rendering code.</li>\n\n
+        <li>New option to change widget layout depending on device rotation.</li>\n\n
+        <li>Much more flexible colour options:</li>\n
+        <li>- You can now make any RGB colour, or pick one of the presets.</li>\n
+        <li>- Separate colour controls for outlines and complications.</li>\n
+        <li>- Each colour can be \'locked\' individually:</li>\n
+        <li> --- Locked colours will stay the same no matter what wallpaper you use.</li>\n
+        <li> --- Unlocked colours will be replaced by colours picked from your wallpaper.</li>\n\n
+        <li>New date formatting options.</li>\n\n
+        <li>New option to change the frequency of colour-syncing with your wallpaper. Choose a lower frequency to reduce system resource usage. You can always touch the widget to force a colour update.</li>\n\n
+        <li>You can now choose more than one app to open when you touch the widget. Tapping the widget will force a colour update, regardless of other settings.</li>
+        <!--<li>Notification colours - change widget colours when you have particular notifications active.</li>\n-->
+    </string>
+    <string name="help_color_locking_content_1">Colour selection is now much more flexible and works a little differently.</string>
+    <string name="help_color_locking_content_2"><li>The switch below each patch \'locks\' that colour so that it always stays the same.</li></string>
+    <string name="help_color_locking_content_3"><li>Any unlocked colours will be replaced depending on your wallpaper.</li></string>
+</resources>

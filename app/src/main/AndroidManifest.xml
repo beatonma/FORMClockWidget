@@ -1,0 +1,62 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beatonma.formclockwidget">
+
+    <application
+        android:name=".widget.ConfigApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".app.ConfigActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".app.ConfigActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".widget.OnTouchActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:taskAffinity=".widget.OnTouchActivity"
+            android:theme="@style/WidgetAppTheme"/>
+
+        <receiver android:name=".WidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.beatonma.formclockwidget.UPDATE" />
+                <action android:name="com.beatonma.formclockwidget.ANIMATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
+
+        <service android:name=".widget.WidgetUpdateService"/>
+
+        <service
+            android:name="com.beatonma.formclockwidget.daydream.DaydreamService"
+            android:exported="false"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/dream_name"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.dream"
+                android:resource="@xml/dream_info" />
+        </service>
+    </application>
+</manifest>

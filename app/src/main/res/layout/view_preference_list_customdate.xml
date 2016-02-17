@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="48dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overlay"
+        android:background="@color/TextSecondary"
+        android:alpha="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/formatting_help"
+        android:elevation="@dimen/max_elevation"
+        android:paddingTop="@dimen/statusbar_height"
+        android:visibility="invisible"
+        style="@style/Card.NoClip.Dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:text="@string/help_date_formatting_title"
+            style="@style/Help.TitleSmall"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|end"
+                android:paddingRight="8dp"
+                android:id="@+id/help_date_formatting_examples_unformatted"
+                style="@style/Help.ContentSmall"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|start"
+                android:paddingLeft="8dp"
+                android:id="@+id/help_date_formatting_examples_formatted"
+                style="@style/Help.ContentSmall"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:id="@+id/help_date_formatting_preview"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            style="@style/Help.ContentSmall"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/card"
+        android:visibility="invisible"
+        style="@style/Card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/content_container">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerview"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@+id/recyclerview"
+                android:layout_alignRight="@+id/recyclerview"
+                android:minWidth="@dimen/button_width"
+                android:text="OK"
+                android:id="@+id/button"
+                style="@style/Button.Flat.Dialog"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

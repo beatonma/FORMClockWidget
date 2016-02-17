@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+
+    <color name="Primary">#424242</color>
+    <color name="PrimaryDark">#212121</color>
+    <color name="PrimaryLight">#848484</color>
+    <color name="Accent">#FF1744</color>
+    <color name="AccentDark">#D50000</color>
+    <color name="AccentLight">#FF5252</color>
+
+    <color name="TextPrimary">#D8000000</color>
+    <color name="TextSecondary">#89000000</color>
+    <color name="TextPrimaryLight">#D8FFFFFF</color>
+    <color name="TextSecondaryLight">#89FFFFFF</color>
+
+    <color name="Dialog">#eeeeee</color>
+    <color name="DialogDark">@color/Primary</color>
+    <color name="Overlay">#22aaaaaa</color>
+    <color name="OverlayAccent">#33FF1744</color>
+
+    <color name="Red500">#f44336</color>
+    <color name="Pink500">#e01e63</color>
+    <color name="Purple500">#9c27b0</color>
+    <color name="DeepPurple500">#673ab7</color>
+    <color name="Indigo500">#3f51b5</color>
+    <color name="Blue500">#2196f3</color>
+    <color name="LightBlue500">#03a9f4</color>
+    <color name="Cyan500">#00bcd4</color>
+    <color name="Teal500">#009688</color>
+    <color name="Green500">#4caf50</color>
+    <color name="LightGreen500">#8bc34a</color>
+    <color name="Lime500">#cddc39</color>
+    <color name="Yellow500">#ffeb3b</color>
+    <color name="Amber500">#ffc107</color>
+    <color name="Orange500">#ff9800</color>
+    <color name="DeepOrange500">#ff5722</color>
+    <color name="Brown500">#795548</color>
+    <color name="Grey500">#9e9e9e</color>
+    <color name="BlueGrey500">#607d8b</color>
+
+    <color name="Highlight">#33ff0000</color>
+    <color name="Transparent">#00000000</color>
+    <color name="TranslucentBlack">#86000000</color>
+    <color name="Card">@color/White</color>
+    <color name="CardRipple">#21000000</color>
+    <color name="CardRippleLight">#21FFFFFF</color>
+
+    <color name="DefaultMain1">#FFFF6D00</color>
+    <color name="DefaultMain2">#FFFFC400</color>
+    <color name="DefaultMain3">@color/White</color>
+    <color name="DefaultShadow">#64000000</color>
+    <color name="DefaultComplications">@color/White</color>
+</resources>

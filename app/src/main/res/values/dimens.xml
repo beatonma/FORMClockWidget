@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">220dp</dimen>
+    <dimen name="large_header_height">300dp</dimen>
+    <dimen name="preview_text_size">64sp</dimen>
+
+    <dimen name="seconds_clock_height">16sp</dimen>
+    <dimen name="seconds_clock_spacing">3dp</dimen>
+
+    <dimen name="button_color_background_size">98dp</dimen>
+    <dimen name="button_color_size">96dp</dimen>
+    <dimen name="color_patch_size">48dp</dimen>
+    <dimen name="color_transparent_tile_size">4dp</dimen>
+
+    <dimen name="button_color_background_size_small">50dp</dimen>
+    <dimen name="button_color_size_small">48dp</dimen>
+    <dimen name="button_margin">2dp</dimen>
+
+    <dimen name="expanded_tab_height">48dp</dimen>
+
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="card_padding_bottom">8dp</dimen>
+    <dimen name="card_raise_z">4dp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+
+    <dimen name="button_width">64dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+
+    <dimen name="statusbar_height">0dp</dimen>
+
+    <dimen name="colorpicker_card_width">256dp</dimen>
+    <dimen name="colorpicker_card_height">330dp</dimen>
+
+    <dimen name="min_listview_height">52dp</dimen>
+
+    <dimen name="content_max_width">400dp</dimen>
+
+    <!-- Elevation of a view that should be on top of any other view -->
+    <dimen name="max_elevation">12dp</dimen>
+</resources>

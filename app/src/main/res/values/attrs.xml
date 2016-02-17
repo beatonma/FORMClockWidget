@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="name" format="string|reference"/>
+    <attr name="description" format="reference"/>
+    <attr name="key" format="string"/>
+
+    <declare-styleable name="FormClockView">
+        <attr name="textSize" format="dimension" />
+        <attr name="charSpacing" format="dimension" />
+        <attr name="color1" format="color" />
+        <attr name="color2" format="color" />
+        <attr name="color3" format="color" />
+        <attr name="isPreview" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ListPreference">
+        <attr name="name"/>
+        <attr name="description"/>
+        <attr name="key"/>
+        <attr name="multiselect" format="boolean"/>
+        <attr name="entries" format="reference" />
+        <attr name="entryValues" format="reference" />
+        <attr name="defaultValue" format="integer" />
+        <attr name="defaults" format="reference" />
+        <attr name="showSelected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="Preference">
+        <attr name="name"/>
+        <attr name="description"/>
+        <attr name="key"/>
+        <attr name="default_color" format="integer|reference"/>
+        <attr name="checked" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSeekbarView">
+        <attr name="text" format="string|reference"/>
+        <attr name="textcolor" format="reference"/>
+        <attr name="channel" format="integer"/>
+    </declare-styleable>
+</resources>

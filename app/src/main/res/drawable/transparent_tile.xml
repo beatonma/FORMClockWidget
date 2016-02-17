@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+               android:shape="rectangle">
+            <solid android:color="@color/DialogDark"/>
+            <size android:height="@dimen/color_transparent_tile_size" android:width="@dimen/color_transparent_tile_size"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/color_transparent_tile_size">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/Dialog"/>
+            <size android:height="@dimen/color_transparent_tile_size" android:width="@dimen/color_transparent_tile_size"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/color_transparent_tile_size">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/Dialog"/>
+            <size android:height="@dimen/color_transparent_tile_size" android:width="@dimen/color_transparent_tile_size"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/color_transparent_tile_size" android:left="@dimen/color_transparent_tile_size">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/DialogDark"/>
+            <size android:height="@dimen/color_transparent_tile_size" android:width="@dimen/color_transparent_tile_size"/>
+        </shape>
+    </item>
+</layer-list>

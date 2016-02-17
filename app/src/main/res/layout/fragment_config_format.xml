@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pref="http://schemas.android.com/apk/res-auto"
+    xmlns:list="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/top_level_container">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.beatonma.formclockwidget.app.ui.PreferenceSection
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_section_format_time"/>
+
+            <com.beatonma.formclockwidget.app.ui.ListPreference
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_format_time"
+                pref:key="pref_format_time"
+                list:entries="@array/time_format_entries"
+                list:showSelected="true"/>
+
+            <com.beatonma.formclockwidget.app.ui.SwitchPreference
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_format_zero_padding"
+                pref:key="pref_format_zero_padding"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_format">
+
+            <!-- Padding -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+
+            <com.beatonma.formclockwidget.app.ui.PreferenceSection
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_section_format_complications"/>
+
+            <com.beatonma.formclockwidget.app.ui.ListPreference
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_date_format"
+                pref:key="pref_date_format"/>
+
+            <com.beatonma.formclockwidget.app.ui.SwitchPreference
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                pref:name="@string/pref_date_uppercase"
+                pref:key="pref_date_uppercase"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
