@@ -7,8 +7,8 @@
     <string name="pref_update_interval">Colour update frequency</string>
     <string name="changelog">
         <b>v2.0.1</b> (February 2016):\n
-        <li>New option to tweak automatic color-picking to prefer lighter/darker colors.</li>\n
-        <li>Fixed: Muzei wallpaper changes will now automatically force a color update.</li>\n
+        <li>New option to tweak automatic colour-picking to prefer lighter/darker colours.</li>\n
+        <li>Fixed: Muzei wallpaper changes will now automatically force a colour update.</li>\n
         <li>Fixed: Touch shortcuts will no longer remove FORM from the Recents overview screen.</li>\n
         \n\n\n
 
@@ -79,4 +79,61 @@
     <string name="help_color_locking_content_1">Colour selection is now much more flexible and works a little differently.</string>
     <string name="help_color_locking_content_2"><li>The switch below each patch \'locks\' that colour so that it always stays the same.</li></string>
     <string name="help_color_locking_content_3"><li>Any unlocked colours will be replaced depending on your wallpaper.</li></string>
+    <string name="app_name">FORM Clock Widget</string>
+    <string name="beta_thankyou">Thank you for helping me test this beta version of FORM Clock Widget.\n\n         Please let me know if you have any crashes or unexpected oddities and I will do my best to sort them out quickly. Any other forms of feedback and requests are welcome too!</string>
+    <string name="beta_thankyou_title">Thank you!</string>
+    <string name="button_changelog">What else is new?</string>
+    <string name="button_close">Close</string>
+    <string name="button_community">Visit G+ Community</string>
+    <string name="button_email">Send email</string>
+    <string name="button_ok">OK</string>
+    <string name="button_understood">Understood</string>
+    <string name="button_widget_settings">Widget settings</string>
+    <string name="changelog_title">Change log</string>
+    <string name="config_tab_beta">Beta</string>
+    <string name="config_tab_feedback">Feedback</string>
+    <string name="config_tab_format">Format</string>
+    <string name="config_tab_layout">Layout</string>
+    <string name="config_tab_other">Other</string>
+    <string name="contact_email_subject">FORM Clock Widget feedback</string>
+    <string name="dream_name">FORM Clock</string>
+    <string name="feedback_text">If you have any problems or requests please let me know and I will do what I can to help you.</string>
+    <string name="feedback_title">Something to say?</string>
+    <string name="fragtag_changelog"></string>
+    <string name="help_color_locking_title">Welcome to v2.0!</string>
+    <string name="help_date_formatting_title">Formatting examples:</string>
+    <string name="on_touch_nothing">Nothing</string>
+    <string name="orientation_device">Device orientation</string>
+    <string name="orientation_horizontal">Horizontal</string>
+    <string name="orientation_vertical">Vertical</string>
+    <string name="pref_color_bias">Automatic bias</string>
+    <string name="pref_color_bias_default">Default</string>
+    <string name="pref_color_section_bias">Generation</string>
+    <string name="pref_color_section_complications">Complications</string>
+    <string name="pref_color_section_main">Main</string>
+    <string name="pref_color_section_shadow">Outline</string>
+    <string name="pref_complication_alarm">Next alarm</string>
+    <string name="pref_complication_date">Date</string>
+    <string name="pref_date_format">Date format</string>
+    <string name="pref_enable_animation">Enable animation</string>
+    <string name="pref_date_uppercase">Uppercase</string>
+    <string name="pref_enable_animation_summary"><b>Warning</b>: widgets are not meant to animate! Animation is rarely smooth and may cause performance issues.</string>
+    <string name="pref_format_time">Time</string>
+    <string name="pref_format_time_summary">Use system settings</string>
+    <string name="pref_format_zero_padding">Zero-padding</string>
+    <string name="pref_on_touch">Touch shortcut(s)</string>
+    <string name="pref_on_touch_summary">Choose what happens when the widget is touched.</string>
+    <string name="pref_section_format_complications">Complications</string>
+    <string name="pref_section_format_time">Clock</string>
+    <string name="pref_theme_orientation">Orientation</string>
+    <string name="pref_theme_show_shadows">Enable outlines</string>
+    <string name="pref_theme_show_shadows_summary">Show a thin outline to make it easier to see against your wallpaper.</string>
+    <string name="preview_description">Widget preview</string>
+    <string name="time_format_12">12 hour</string>
+    <string name="time_format_24">24 hour</string>
+    <string name="update_interval_day">Every day</string>
+    <string name="update_interval_hour">Every hour</string>
+    <string name="update_interval_minute">Every minute</string>
+    <string name="update_interval_manual">Manual updates only</string>
+    <string name="time_format_system">Use system setting</string>
 </resources>
