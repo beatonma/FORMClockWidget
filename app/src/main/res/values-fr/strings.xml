@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name" translatable="true">FORM Clock Widget</string>
+
+    <string name="preview_description" translatable="true">Aperçu widget</string>
+    <string name="dream_name" translatable="true">Horloge FORM</string>
+
+    <string name="contact_email_subject" translatable="true">Commentaires FORM Clock Widget</string>
+    
+    <!-- User settings -->
+    <string name="config_tab_layout" translatable="true">Disposition</string>
+    <string name="config_tab_colors" translatable="true">Couleurs</string>
+    <string name="config_tab_format" translatable="true">Format</string>
+    <string name="config_tab_other" translatable="true">Divers</string>
+    <string name="config_tab_beta" translatable="true">Bêta</string>
+    <string name="config_tab_feedback" translatable="true">Commentaires</string>
+
+    <!-- Category: Colors -->
+    <string name="pref_color_section_main" translatable="true">Principal</string>
+    <string name="pref_color_section_shadow" translatable="true">Contour</string>
+    <string name="pref_color_section_complications" translatable="true">Complications</string>
+    <string name="pref_color_section_bias" translatable="true">Génération</string>
+    <string name="pref_color_bias" translatable="true">Polarisation auto</string>
+    <string name="pref_color_bias_default" translatable="true">Par défaut</string>
+    <string name="pref_color_bias_dark" translatable="true">Couleurs sombres</string>
+    <string name="pref_color_bias_light" translatable="true">Couleurs claires</string>
+
+    <!-- Category: Layout -->
+    <string name="pref_theme_show_shadows" translatable="true">Contours</string>
+    <string name="pref_theme_show_shadows_summary" translatable="true">Afficher un léger contour pour le rendre plus visible sur votre fond d\'écran.</string>
+    <string name="pref_theme_orientation" translatable="true">Orientation</string>
+    <string name="orientation_horizontal" translatable="true">Horizontal</string>
+    <string name="orientation_vertical" translatable="true">Vertical</string>
+    <string name="orientation_device" translatable="true">Orientation système</string>
+    <string name="pref_complication_date" translatable="true">Date</string>
+    <string name="pref_date_format" translatable="true">Format de date</string>
+    <string name="pref_date_uppercase" translatable="true">Majuscule</string>
+    <string name="pref_complication_alarm" translatable="true">Prochaine alarme</string>
+
+    <string name="pref_update_interval" translatable="true">Intervalle de mise à jour</string>
+    <string name="pref_update_interval_summary" translatable="true">Combien de fois les couleurs doivent se synchroniser avec votre fond d\'écran. Vous pouvez forcer une mise à jour manuellement en appuyant sur le widget.</string>
+    <string name="update_interval_minute" translatable="true">Chaque minute</string>
+    <string name="update_interval_hour" translatable="true">Chaque heure</string>
+    <string name="update_interval_day" translatable="true">Chaque jour</string>
+    <string name="update_interval_manual" translatable="true">Manuellement</string>
+
+    <!-- Category: Format -->
+    <string name="pref_section_format_time" translatable="true">Horloge</string>
+    <string name="pref_format_time" translatable="true">Heure</string>
+    <string name="pref_format_time_summary" translatable="true">Paramètres système</string>
+    <string name="pref_section_format_complications" translatable="true">Complications</string>
+    <string name="time_format_system" translatable="true">Paramètres système</string>
+    <string name="time_format_12" translatable="true">12 heure</string>
+    <string name="time_format_24" translatable="true">24 heure</string>
+    <string name="pref_format_zero_padding" translatable="true">Voir le zéro</string>
+
+    <!-- Category: Other -->
+    <string name="pref_enable_animation" translatable="true">Animation</string>
+    <string name="pref_enable_animation_summary" translatable="true"><B>Attention</b> : les widgets ne sont pas destinés à s\'animer ! L\'animation est rarement fluide et peut provoquer des problèmes de performance.</string>
+    <string name="pref_on_touch" translatable="true">Raccourci(s) à l\'appui</string>
+    <string name="pref_on_touch_summary" translatable="true">Choisir ce qui arrive quand le widget est pressé.</string>
+    <string name="on_touch_nothing" translatable="true">Rien</string>  
+
+    <!-- Help -->
+    <string name="help_color_locking_title" translatable="true">Bienvenue sur la v2.0 !</String>
+    <string name="help_color_locking_content_1" translatable="true">Le choix des couleurs est maintenant beaucoup plus flexible et fonctionne un peu différemment.</string>
+    <string name="help_color_locking_content_2" translatable="true"><li>L\'interrupteur dessous chaque aperçu \"verrouille\" cette couleur afin qu\'elle reste toujours la même.</li></string>
+    <string name="help_color_locking_content_3" translatable="true"><li>Toutes les couleurs désactivées seront remplacées en fonction de votre fond d\'écran.</li></string>
+    <string name="help_date_formatting_title" translatable="true">Exemples de mise en forme :</string>
+
+    <!-- Generic button text -->
+    <string name="button_ok" translatable="true">OK</string>
+    <string name="button_understood" translatable="true">Compris</string>
+    <string name="button_changelog" translatable="true">Nouveautés</string>
+    <string name="button_close" translatable="true">Fermer</string>
+    <string name="button_email" translatable="true">Envoyer un e-mail</string>
+    <string name="button_community" translatable="true">Visiter la Communauté G+</string>
+    <string name="button_widget_settings" translatable="true">Paramètres du widget</string>
+
+    <string name="changelog_title" translatable="true">Journal des modifications</string>
+
+    <string name="beta_thankyou_title" translatable="true">Merci !</string>
+    <string name="beta_thankyou" translatable="true">
+        Merci de m\'aider à tester cette version bêta de FORM Clock Widget.\n\n
+        S\'il vous plaît faites-le moi savoir si vous avez des plantages ou bizarreries inattendus et je ferai de mon mieux pour les trier rapidement. Toute autre forme de commentaires et demandes sont aussi les bienvenus !
+    </string>
+
+    <string name="feedback_title" translatable="true">Quelque chose à dire ?</string>
+    <string name="feedback_text" translatable="true">Si vous avez des problèmes ou demandes s\'il vous plaît faites-le moi savoir et je ferai ce que je peux pour vous aider.</string>
+
+</resources>
