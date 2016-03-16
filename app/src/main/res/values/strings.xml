@@ -76,6 +76,9 @@
         <item>@string/update_interval_manual</item>
     </string-array>
 
+    <!--<string name="pref_extensions">Configure extensions&#8230;</string>-->
+    <!--<string name="pref_extensions_description">Dashclock extensions are now supported!</string>-->
+
     <!-- Category: Format -->
     <string name="pref_section_format_time" translatable="true">Clock</string>
     <string name="pref_format_time" translatable="true">Time</string>
@@ -97,12 +100,27 @@
     <string name="pref_on_touch" translatable="true">Touch shortcut(s)</string>
     <string name="pref_on_touch_summary" translatable="true">Choose what happens when the widget is touched.</string>
     <string name="on_touch_nothing" translatable="true">Nothing</string>
+    <string name="pref_force_persistence" translatable="true">Force persistence</string>
+    <string name="pref_force_persistence_summary" translatable="true">Only enable if you have problems with the clock not updating properly! Note that this will add a persistent notification to your system notifications.</string>
+
+    <!-- Extensions -->
+    <string name="extensions_dashclock_missing_title" translatable="true">Dashclock required</string>
+    <string name="extensions_dashclock_missing_description" translatable="true">Dashclock must be installed to allow access to Dashclock extensions. Please install it from the Play Store below.</string>
+    <string name="incompatible_extension_menu_template" translatable="true">%1$s (Incompatible)</string>
+    <string name="incompatible_extension_message_search_play_template" translatable="true"><![CDATA[The
+        <b>%1$s</b> extension is incompatible with this version of DashClock.
+        Look for an update to the extension on Google Play?]]></string>
 
     <!-- Fragment tags -->
     <string name="fragtag_colorpicker" translatable="false">colorpicker</string>
     <string name="fragtag_listpreference" translatable="false">listpreference</string>
-    <string name="fragtag_floating" translateable="false" translatable="false">floating</string>
-    <string name="fragtag_changelog" translateable="false" translatable="false">changelog</string>
+    <string name="fragtag_floating" translatable="false">floating</string>
+    <string name="fragtag_changelog" translatable="false">changelog</string>
+    <string name="fragtag_extension_config" translatable="false">extension_config</string>
+
+    <!-- Transition animation tags -->
+    <string name="transition_appbar" translatable="false">transition_appbar</string>
+    <string name="transition_content" translatable="false">transition_content</string>
 
     <!-- Onboarding -->
 
@@ -123,12 +141,23 @@
     <string name="button_email" translatable="true">Send email</string>
     <string name="button_community" translatable="true">Visit G+ Community</string>
     <string name="button_widget_settings" translatable="true">Widget settings</string>
+    <string name="button_check_now" translatable="true">Check now</string>
+    <string name="button_play_store" translatable="true">Play Store</string>
 
     <string name="changelog_title" translatable="true">Change log</string>
-    <string name="changelog">
+    <string name="changelog" translatable="false">
         <b>v2.0.2</b>:\n
+        <li>New: French translation, thanks to Mickael (<a href="https://github.com/M2ck">M2ck</a>)!</li>\n
+        <li>New: Automatic day/night theme switching for the settings app and shortcut launcher.</li>\n
+        <li>New: Persistent mode, for those who are having problems with the widget not updating. Please note, this will add a persistent notification to your system notifications</li>\n
         <li>Fixed: Alarm complication will now show 12 noon correctly when using 12-hour time format.</li>\n
-        <li>New: French translation, thanks to M2ck!</li>\n
+        <li>Fixed: The number 7 no longer shows overlapping sections when using transparent colors.</li>\n
+        <li>Fixed: Some strange behaviour in list dialogs.</li>\n
+        <li>Fixed: Several crashy things:
+        - Workaround to compensate for some launchers reporting wrong dimensions when widget is resized.\n
+        - Workaround to compensate for Samsung on some Samsung devices when requesting current wallpaper.\n
+        - Better handling of invalid/corrupted touch shortcuts.
+        - Two other minor fixes which each affected a single person.</li>\n
         \n\n\n
 
 
@@ -156,7 +185,7 @@
         <li>Added a very basic Daydream. For now this is essentially an easter egg but will be improved on in future updates.</li>\n
         \n\n
     </string>
-    <string name="changelog_beta" translatable="true">
+    <string name="changelog_beta" translatable="false">
         <b>v2.0.d</b>\n
         <li>Some users have had problems with the touch shortcut settings, so I have reimplemented that dialog. I was not able to replicate the error so this is mostly guesswork - if you have had issues before please let me know if this has fixed it for you!</li>\n
         <li>- The shortcut menu is now sorted properly and shows package names to help you figure out which app called e.g. \'Clock\' you actually want to use.</li>\n
@@ -209,5 +238,4 @@
 
     <string name="feedback_title" translatable="true">Something to say?</string>
     <string name="feedback_text" translatable="true">If you have any problems or requests please let me know and I will do what I can to help you.</string>
-
 </resources>
