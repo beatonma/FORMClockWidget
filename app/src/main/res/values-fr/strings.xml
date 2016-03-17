@@ -58,7 +58,15 @@
     <string name="pref_enable_animation_summary" translatable="true"><B>Attention</b> : les widgets ne sont pas destinés à s\'animer ! L\'animation est rarement fluide et peut provoquer des problèmes de performance.</string>
     <string name="pref_on_touch" translatable="true">Raccourci(s) à l\'appui</string>
     <string name="pref_on_touch_summary" translatable="true">Choisir ce qui arrive quand le widget est pressé.</string>
-    <string name="on_touch_nothing" translatable="true">Rien</string>  
+    <string name="on_touch_nothing" translatable="true">Rien</string>
+    <string name="pref_force_persistence" translatable="true">Forcer la persistance</string>
+    <string name="pref_force_persistence_summary" translatable="true">Activer uniquement si vous avez des problèmes avec la mise à jour de l\'horloge ! Noter que cela va ajouter une notification persistante à vos notifications système.</string>
+
+    <!-- Extensions -->
+    <string name="extensions_dashclock_missing_title" translatable="true">Dashclock requis</string>
+    <string name="extensions_dashclock_missing_description" translatable="true">Dashclock doit être installé pour permettre l\'accès aux extensions Dashclock. Veuillez l\'installer depuis le Play Store ci-dessous.</string>
+    <string name="incompatible_extension_menu_template" translatable="true">%1$s (Incompatible)</string>
+    <string name="incompatible_extension_message_search_play_template" translatable="true"><![CDATA[L\'extension <b>%1$s</b> est incompatible avec cette version de DashClock. Rechercher une mise à jour de l\'extension sur le Play Store ?]]></string>    
 
     <!-- Help -->
     <string name="help_color_locking_title" translatable="true">Bienvenue sur la v2.0 !</String>
@@ -75,6 +83,8 @@
     <string name="button_email" translatable="true">Envoyer un e-mail</string>
     <string name="button_community" translatable="true">Visiter la Communauté G+</string>
     <string name="button_widget_settings" translatable="true">Paramètres du widget</string>
+    <string name="button_check_now" translatable="true">Vérifier maintenant</string>
+    <string name="button_play_store" translatable="true">Play Store</string>    
 
     <string name="changelog_title" translatable="true">Journal des modifications</string>
 
